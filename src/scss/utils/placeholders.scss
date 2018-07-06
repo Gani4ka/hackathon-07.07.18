@@ -71,3 +71,19 @@
   max-width: 100%;
   height: auto;
 }
+
+%block-link{
+  display: block;
+  text-decoration: none;
+}
+
+%flex-list{
+  @include flex ($jc: space-between);
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+%section{
+  position: relative;
+}
