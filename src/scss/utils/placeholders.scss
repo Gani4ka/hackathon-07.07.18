@@ -1,35 +1,72 @@
-%article-title{
+%section-title {
   font-family: $main-font;
-  font-size: $title-h2-font-size;
-  font-weight: 900;
-  line-height: 68px;
+  font-size: $title-middle-font-size;
+  font-weight: $black;
+  line-height: 45px;
   color: $title-dark-color;
+  text-transform: uppercase;
 
-  @include mobile{
-    font-size: $title-h2-font-size*0.8;
-    line-height: 56px;
+  @include mobile {
+    font-size: $title-small-font-size;
+    line-height: 16px;
+  }
+
+  @include tablet-small {
+    font-size: 21px;
+    line-height: 25.66px;
+  }
+
+  @include tablet-big {
+    font-size: 27px;
+    line-height: 33.65px;
+  }
+
+  @include desktop-small {
+    font-size: 34px;
+    line-height: 42.06px;
+  }
+
+  @include desktop-big {
+    font-size: 30px;
+    line-height: 37.5px;
   }
 }
 
-%section-title{
+%section-text {
   font-family: $main-font;
-  font-size: $title-h3-font-size;
-  font-weight: 900;
-  line-height: 50px;
+  font-size: $main-font-size;
+  font-weight: $regular;
+  line-height: 15.75px;
   color: $title-dark-color;
 
-  @include mobile{
-    font-size: $title-h3-font-size*0.8;
-    line-height: 40px;
+  @include mobile {
+    font-size: $mobile-font-size;
+    line-height: 13px;
+  }
+
+  @include tablet-small {
+    font-size: 14px;
+    line-height: 19.5px;
+  }
+
+  @include tablet-big {
+    font-size: 8;
+    line-height: 11.78;
+  }
+
+  @include desktop-small {
+    font-size: $vertical_small-font-size;
+    line-height: 14.72px;
+  }
+
+  @include desktop-big {
+    font-size: $mobile-font-size;
+    line-height: 13.13px;
   }
 }
 
-%inverted-colors{
-  color: $title-light-color;
-  background-color: $title-dark-color;
-}
 
-%image{
+%image {
   display: block;
   max-width: 100%;
   height: auto;

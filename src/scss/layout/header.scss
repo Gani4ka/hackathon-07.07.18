@@ -1,0 +1,4 @@
+.lol {
+  @include inverted-colors($title-light-color, $mark-warm-color);
+  background-color: green;
+}
