@@ -1,5 +1,5 @@
 @mixin mobile{
-  @media (min-width: $phone-break-point){
+  @media (min-width: $phone-big-break-point){
     @content;
   }
 }
