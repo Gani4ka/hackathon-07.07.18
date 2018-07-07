@@ -78,7 +78,9 @@
     font-weight: 500;
     line-height: 13px;
     margin: 0 auto;
+    text-align: left;
     position: relative;
+    padding-left: 15px;
   }
 
   .notnumber-section_subtitle::before {
@@ -90,7 +92,7 @@
     display: block;
     position: absolute;
     top: 5px;
-    left: -30px;
+    left: -5px;
   }
 
   .notnumber-section__list {
@@ -111,7 +113,7 @@
 
   .notnumber-section__item__title::before {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: -12px;
     content: '';
     display: block;
