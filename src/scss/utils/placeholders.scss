@@ -6,7 +6,7 @@
   color: $title-dark-color;
   text-transform: uppercase;
 
-  @include mobile {
+  @include mobile-big {
     font-size: 21px;
     line-height: 25.66px;
   }
@@ -34,34 +34,34 @@
 
 %section-text {
   font-family: $main-font;
-  font-size: $main-font-size;
+  font-size: $mobile-font-size;
   font-weight: $regular;
-  line-height: 15.75px;
+  line-height: 13;
   color: $title-dark-color;
 
-  @include mobile {
-    font-size: $mobile-font-size;
-    line-height: 13px;
-  }
-
-  @include tablet-small {
+  @include mobile-big {
     font-size: 14px;
     line-height: 19.5px;
   }
 
-  @include tablet-big {
+  @include tablet-small {
     font-size: 8;
     line-height: 11.78;
   }
 
-  @include desktop-small {
+  @include tablet-big {
     font-size: $vertical_small-font-size;
-    line-height: 14.72px;
+    line-height: 14.72;
   }
 
-  @include desktop-big {
+  @include desktop-small {
     font-size: $mobile-font-size;
     line-height: 13.13px;
+  }
+
+  @include desktop-small {
+    font-size: $main-font-size;
+    line-height: 15.75px;
   }
 }
 
@@ -70,13 +70,3 @@
   text-decoration: none;
 }
 
-
-// %image {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
-
-// %section{
-//   position: relative;
-// }

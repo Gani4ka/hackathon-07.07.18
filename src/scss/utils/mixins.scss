@@ -1,4 +1,4 @@
-@mixin mobile{
+@mixin mobile-big{
   @media (min-width: $phone-break-point){
     @content;
   }
