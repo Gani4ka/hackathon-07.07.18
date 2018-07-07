@@ -2,7 +2,7 @@
   font-family: $main-font;
   font-size: $title-small-font-size;
   font-weight: $black;
-  line-height: 16;
+  line-height: 16px;
   color: $title-dark-color;
   text-transform: uppercase;
 
@@ -36,7 +36,7 @@
   font-family: $main-font;
   font-size: $mobile-font-size;
   font-weight: $regular;
-  line-height: 13;
+  line-height: 13px;
   color: $title-dark-color;
 
   @include mobile-big {
@@ -45,13 +45,13 @@
   }
 
   @include tablet-small {
-    font-size: 8;
-    line-height: 11.78;
+    font-size: 8px;
+    line-height: 11.78px;
   }
 
   @include tablet-big {
     font-size: $vertical_small-font-size;
-    line-height: 14.72;
+    line-height: 14.72px;
   }
 
   @include desktop-small {
