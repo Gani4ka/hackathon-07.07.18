@@ -10,15 +10,42 @@ html {
 
 body {
   font-family: $main-font;
-  font-size: $main-font-size;
+  font-size: $mobile-font-size;
   font-weight: $regular;
+  line-height: 13px;
+
+  @include mobile-big{
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
+
+  @include tablet-small{
+    font-size: 9px;
+    line-height: 13.5px;
+  }
+
+  @include tablet-big{
+    font-size: 9.8px;
+    line-height: 16.8px;
+  }
+
+  @include desktop-small{
+    font-size: 8.75px;
+    line-height: 15px;
+  }
+
+  @include desktop-big{
+    font-size: 10.5px;
+    line-height: 18px;
+  }
+
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
