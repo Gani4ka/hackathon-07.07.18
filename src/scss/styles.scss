@@ -10,6 +10,12 @@
 @import 'base/base';
 @import 'base/animate';
 
+/* Components */
+@import 'components/bg-text';
+@import 'components/burger';
+@import 'components/logo';
+@import 'components/main-button';
+
 /* Layout */
 @import 'layout/header';
 @import 'layout/start-section';

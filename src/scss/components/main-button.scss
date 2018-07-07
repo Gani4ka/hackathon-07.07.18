@@ -6,7 +6,9 @@
   background-color: $mark-warm-color;
   font-family: $main-font;
   //font-size: $mobile-font-size;
-  font-weight: $regular;
+  font-weight: $bold;
   color: $title-light-color;
   outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
