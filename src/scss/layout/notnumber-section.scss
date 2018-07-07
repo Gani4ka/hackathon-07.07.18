@@ -12,12 +12,12 @@
   }
 
   .notnumber-section__picture {
-    height: 115px;
-    width: 296px;
-    background: url("../img/notnumber-img-01.jpg");
+    background: url("../img/notnumber.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 297px;
+    height: 117px;
   }
 
   .notnumber-section__mogo {
@@ -52,7 +52,7 @@
 
   .notnumber-section__about-motivation--bgc {
     color: #fff;
-    background-color: $mark-cold-color;
+    background-color: #16ebfe;
   }
 
   .notnumber-section__discription {
@@ -95,6 +95,7 @@
 
   .notnumber-section__list {
     width: 200px;
+    @include flex-list;
   }
 
   .notnumber-section__item__title {
@@ -104,6 +105,19 @@
     line-height: 13px;
     text-transform: uppercase;
     margin-top: 20px;
+    position: relative;
+
+  }
+
+  .notnumber-section__item__title::before {
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #000000;
   }
 
   .notnumber-section__item__about {
