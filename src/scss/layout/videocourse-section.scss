@@ -42,8 +42,9 @@
 // }
 
 .video-advantages__list {
-  @include flex-list;
+  // @include flex-list;
   counter-reset: paragrph;
+  list-style: none;
 }
 
 .video-advantages__items {
@@ -53,10 +54,10 @@
   // padding-left: 70px;
   // padding-top: 10px;
 
-  @include mobile-big{
-    padding-left: 36px;
-    padding-top: 16px;
-  }
+  // @include mobile-big{
+  //   padding-left: 36px;
+  //   padding-top: 16px;
+  // }
 
   &::before {
     content: "[ 00" counter(paragrph) " ]";
@@ -74,13 +75,6 @@
     left: 35px;
     top: 18px;
     text-align: center;
-  }
-
-  @include mobile-big{
-    left: 18px;
-    top: 20px;
-    width: 8px;
-    height: 8px;
   }
   
 }

@@ -93,4 +93,24 @@
   font-size: 4px;
   font-weight: $black;
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__numbers {
+  &--big {
+    font-size: 6px;
+  }
+}
+
+.review__arrows {
+  &--black {
+    display: inline-block;
+    padding: 0 3px;
+    text-align: center;
+    font-size: 7px;
+    line-height: 7px;
+    background-color: #000;
+    color: #fff
+  }
 }
