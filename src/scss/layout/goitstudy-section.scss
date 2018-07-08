@@ -8,25 +8,25 @@ $goitstudy-margin-left-mobile: 50px;
     margin: 0 auto;
     position: relative;
 
-    @include mobile-big{
-      width: 446px;
-    }
+    // @include mobile-big{
+    //   width: 446px;
+    // }
 
-    @include tablet-small{
-      width: 640px;
-    }
+    // @include tablet-small{
+    //   width: 640px;
+    // }
 
-    @include tablet-big{
-      width: 800px;
-    }
+    // @include tablet-big{
+    //   width: 800px;
+    // }
 
-    @include desktop-small{
-      width: 714px;
-    }
+    // @include desktop-small{
+    //   width: 714px;
+    // }
 
-    @include desktop-big{
-      width: 856px;
-    }
+    // @include desktop-big{
+    //   width: 856px;
+    // }
   }
 
   &__title{
