@@ -1,105 +1,100 @@
-
 @media (min-width: 320px) {
-
-    .steps-section {
-      display: flex;
-      flex-wrap: wrap;
-      width: 200px;
-      margin: 20px auto;
-    }
-  
-    .steps-section__discription {
-      margin: 10px auto;
-      width: 200px;
-     }
-
-    .steps-section_title {
-      width: 125px;
-      color: #000;
-      font-size: 12px;
-      font-weight: 800;
-      line-height: 16px;
-      text-transform: uppercase;
-      margin: 0 auto;
-   }
-
-    .steps-section_title--bgc {
-       color: #fff;
-       background: #000;
-     }
-     
-     .steps-section_subtitle {
-      color: #000000;
-      font-size: 9px;
-      font-weight: 500;
-      line-height: 13px;
-      margin: 10px auto;
-      text-align: left;
-      position: relative;
-      padding-left: 15px;
-    }
-
-    .steps-section_subtitle::before {
-      content: "";
-      width: 12px;
-      height: 3px;
-      background-color: #000000;
-      display: block;
-      position: absolute;
-      top: 5px;
-      left: -5px;
-    }
-
-    .steps-section__list {
-      width: 200px;
-      @include flex-list;
-      margin:0 auto;
-    }
-
-    .steps-section__item__title {
-      color: #000000;
-      font-size: 9px;
-      font-weight: 800;
-      line-height: 13px;
-      text-transform: uppercase;
-      margin-top: 20px;
-      position: relative;
-    }
-
-    .steps-section__list-item {
-      position: relative;
-      counter-increment: a;
-      //overflow: hidden;
-     }
-    
-    .steps-section__list-item::before {
-      display: block;
-      position: absolute;
-      left: -40px;
-      top: 20px;
-      content: "0" counter(a) ".";
-      font-size: 17px;
-      font-weight: 900;
-    }
-            
-     .steps-section__item__title::before {
-      position: absolute;
-      top: 20px;
-      left: -25px;
-      content: '';
-      display: block;
-      width: 9px;
-      height: 9px;
-      background-color: #16ebfe;
-    }
-
-    .steps-section__item__about {
-      color: #3f4144;
-      font-size: 9px;
-      font-weight: 400;
-      line-height: 13px;
-    }
-   
+  .steps-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 20px auto;
   }
 
-  
+  .steps-section__discription {
+    margin: 10px auto;
+    width: 200px;
+  }
+
+  .steps-section_title {
+    width: 125px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .steps-section_title--bgc {
+    color: #fff;
+    background: #000;
+  }
+
+  .steps-section_subtitle {
+    color: #000000;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    margin: 10px auto;
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .steps-section_subtitle::before {
+    content: "";
+    width: 12px;
+    height: 3px;
+    background-color: #000000;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+  }
+
+  .steps-section__list {
+    width: 200px;
+    @include flex-list;
+    margin: 0 auto;
+  }
+
+  .steps-section__item__title {
+    color: #000000;
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .steps-section__list-item {
+    position: relative;
+    counter-increment: a;
+    //overflow: hidden;
+  }
+
+  .steps-section__list-item::before {
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    content: "0" counter(a) ".";
+    font-size: 17px;
+    font-weight: 900;
+  }
+
+  .steps-section__item__title::before {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #16ebfe;
+  }
+
+  .steps-section__item__about {
+    color: #3f4144;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+}
