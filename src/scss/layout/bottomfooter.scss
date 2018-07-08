@@ -1,0 +1,27 @@
+.bottomfooter {
+  &__wrapper {
+    min-width: 320px;
+    width: 100%;
+    min-height: 16px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bottomfooter-color;
+  }
+
+  &__link {
+    // padding-bottom: 6px;
+    font-family: $bottomfooter-font;
+    font-size: 3px;
+    line-height: 16px;
+    letter-spacing: 0.18px;
+    color: #65666a;
+    text-decoration: none;
+
+    &:not(:last-of-type) {
+      margin-right: 4px;
+    }
+  }
+
+}

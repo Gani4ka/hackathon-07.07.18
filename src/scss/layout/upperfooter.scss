@@ -1,0 +1,46 @@
+.upperfooter {
+  &__wrapper {
+    min-width: 320px;
+    width: 100%;
+    min-height: 70px;
+    padding: 23px 10px 23px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $upperfootercolor;
+    color: $title-light-color;
+    font-size: 3.5px;
+    line-height: 5.5px;
+  }
+
+  &__social {
+    @extend %link;
+    color: $title-light-color;
+    font-weight: $black;
+    line-height: 7px;
+  }
+
+  &__button {
+    width: 58px;
+    height: 12px;
+    font-weight: $black;
+    color: $title-light-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid $importantbg-color;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.upperfooter__container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 65%;
+}
+
+.contact__title {
+  margin-bottom: 5px;
+  font-weight: $black;
+}
