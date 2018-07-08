@@ -4058,7 +4058,7 @@ button {
 
 .header {
   padding: 10px 0 25px;
-  background-image: url("../../img/header-img-bg-small.jpg");
+  background-image: url("../img/header-img-bg-small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4092,7 +4092,7 @@ button {
   position: absolute;
   width: 31px;
   height: 41px;
-  background-image: url("../../img/header-aux-img-01.png");
+  background-image: url("../img/header-aux-img-01.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: -68px;
@@ -4244,7 +4244,7 @@ button {
   width: 100%;
   height: 90px;
   background-color: #7ff;
-  background-image: url("../../img/start-img-01.jpg");
+  background-image: url("../img/start-img-01.jpg");
   background-position: top 55% right 30%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -4458,7 +4458,7 @@ button {
 .review__photo {
   width: 36px;
   height: 36px;
-  background-image: url("../../img/ordinarypeople-img-01.jpg");
+  background-image: url("../img/ordinarypeople-img-01.jpg");
   background-position: top 0% right 50%;
   background-repeat: no-repeat;
   background-size: 130%;
@@ -4538,12 +4538,12 @@ button {
 }
 
 .manypeople-section__img1 {
-  background-image: url("../../img/manypeople-img-01.jpg");
+  background-image: url("../img/manypeople-img-01.jpg");
   background-position: top 55% right 30%;
 }
 
 .manypeople-section__img2 {
-  background-image: url("../../img/manypeople-img-02.jpg");
+  background-image: url("../img/manypeople-img-02.jpg");
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
   background-position: top 25% right 50%;
@@ -4605,14 +4605,14 @@ button {
 }
 
 .career-section__img1 {
-  background-image: url("../../img/career-img-01.png");
+  background-image: url("../img/career-img-01.png");
   background-position: top 10% right 50%;
   background-size: 64%;
   height: 145px;
 }
 
 .career-section__img2 {
-  background-image: url("../../img/career-img-02.jpg");
+  background-image: url("../img/career-img-02.jpg");
   background-position: top 10% right 50%;
   background-size: 100%;
   height: 130px;
@@ -4655,7 +4655,7 @@ button {
   width: 100%;
   height: 120px;
   background-color: #7ff;
-  background-image: url("../../img/videocourse-img-01.jpg");
+  background-image: url("../img/videocourse-img-01.jpg");
   background-position: top 20% right 30%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -4779,7 +4779,7 @@ button {
 .univ__img {
   width: 296px;
   height: 106px;
-  background-image: url("../../img/goitstudy-img-01.jpg");
+  background-image: url("../img/goitstudy-img-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4822,7 +4822,7 @@ button {
 
 .un-card {
   width: 200px;
-  background-image: url("../../img/goitstudy-img-02.png");
+  background-image: url("../img/goitstudy-img-02.png");
   background-repeat: no-repeat;
   background-position: top 0 right 0;
   background-size: 30%;
@@ -5039,7 +5039,7 @@ button {
 
 .education__img {
   height: 175px;
-  background-image: url("../../img/justnow-img-01.png");
+  background-image: url("../img/justnow-img-01.png");
   background-repeat: no-repeat;
   background-position: top 50% right 70%;
   background-size: contain;
@@ -6534,7 +6534,7 @@ button {
 @media (min-width: 768px) {
   .header {
     padding: 20px 0 98px;
-    background-image: url("../../img/header-img-bg-big.jpg");
+    background-image: url("../img/header-img-bg-big.jpg");
   }
 
   .header__nav {
