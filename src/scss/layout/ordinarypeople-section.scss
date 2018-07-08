@@ -41,7 +41,7 @@
 .ordinarypeople-section__title {
   @extend %section-title;
   // font-size: 14px; //font size replacement for %section-title 320 px
-  padding: 22px 80px 22px;
+  padding: 22px 80px 10px;
   // text-transform: uppercase;
 
   @include mobile-big {
@@ -60,7 +60,7 @@
 .review__photo {
   width: 36px;
   height: 36px;
-  background-image: url("../../img/ordinarypeople-img-01.jpg");
+  background-image: url("../img/ordinarypeople-img-01.jpg");
   background-position: top 0% right 50%;
   background-repeat: no-repeat;
   background-size: 130%;
