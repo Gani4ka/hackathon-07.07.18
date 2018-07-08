@@ -1,6 +1,6 @@
 .header{
   padding: 10px 0 25px;
-  background-image: url('../../img/header-img-bg-small.jpg');
+  background-image: url('../img/header-img-bg-small.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,7 +11,7 @@
 
   @include tablet-small{
     padding: 20px 0 98px;
-    background-image: url('../../img/header-img-bg-big.jpg');
+    background-image: url('../img/header-img-bg-big.jpg');
   }
 
   @include tablet-big{
