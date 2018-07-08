@@ -1,0 +1,143 @@
+.justnow{
+  padding: 30px 0;
+  margin-bottom: 20px;
+
+  &__wrapper{
+    width: 242px;
+    margin: 0 auto;
+  }
+
+  &__education{
+    margin-bottom: 30px;
+  }
+
+  &__possibilities{
+
+  }
+}
+
+.education{
+  margin-bottom: 36px;
+
+  &__img{
+    //width: 172px;
+    height: 175px;
+    background-image: url('../../img/justnow-img-01.png');
+    background-repeat: no-repeat;
+    background-position: top 50% right 70%;
+    background-size: contain;
+    margin: 0 auto 17px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 10px;
+      top: 70px;
+      color: #f2f2f2;
+      font-size: 156px;
+      font-weight: $black;
+      counter-increment: c-text; 
+      content: "IT";
+      transform: rotate(90deg);
+      z-index: -1;
+    }
+  }
+
+  &__pretext{
+    padding-left: 13px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: $bold;
+    color: $mark-warm-color;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 12px;
+      height: 2px;
+      transform: rotate(-55deg);
+      background-color: $title-dark-color;
+      position: absolute;
+      top: 36%;
+      left: -8px;
+    }
+  }
+
+  &__title{
+    @extend %section-title;
+    background: $title-dark-color;
+    color: $title-light-color;
+    text-align: center;
+    width: 220px;
+    margin: 0 auto 12px;
+  }
+
+  &__descr{
+    padding-left: 47px;
+    width: 190px;
+    letter-spacing: -0.10em;
+    position: relative;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      background-color: $title-dark-color;
+      position: absolute;
+      top: 15%;
+      left: 20px;
+    }
+
+  }
+}
+
+.possibilities{
+  &__title{
+    @extend %section-h3-title;
+    margin-bottom: 16px;
+  }
+
+  &__list{
+    list-style: none;
+    counter-reset: just-counter;
+
+  }
+
+  &__item{
+    margin-bottom: 19px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+.poss-card{
+  padding-left: 39px;
+  width: 230px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    height: 7px;
+    color: $title-light-color;
+    background-color: $mark-warm-color;
+    font-size: 9px;
+    font-weight: $black;
+    line-height: 2px;
+    counter-increment: just-counter; 
+    content: "[ 00"counter(just-counter)" ]";
+    transform: rotate(-90deg);
+    //z-index: -1;
+  }
+
+  &__title{
+    font-weight: $bold;
+    margin-bottom: 5px;
+  }
+
+}

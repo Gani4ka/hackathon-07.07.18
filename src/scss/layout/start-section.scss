@@ -1,0 +1,155 @@
+.start-section {
+  padding-top: 35px;
+
+  @include mobile-big{
+    padding-top: 52px;
+  }
+}
+
+.start-section__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+
+  @include mobile-big{
+    max-width: 445px;
+  }
+}
+
+.start-section__questions {
+  font-weight: $bold;
+  padding-bottom: 20px;
+}
+
+.start-section__img{
+  margin: 0 auto 28px;
+  width: 100%;
+  height: 90px;
+  background-color: #7ff;
+  background-image: url('../../img/start-img-01.jpg');
+  background-position: top 55% right 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include mobile-big{
+    height: 130px;
+  }
+}
+
+.start-section__subtitle {
+  position: relative;
+  padding: 0 0 7px 80px;
+  text-transform: uppercase;
+  font-weight: $black;
+
+  @include mobile-big{
+    padding: 12px 0 10px 118px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 53px;
+    top: 5px;
+    width: 16px;
+    height: 2px;
+    background-color: $title-dark-color;
+    content: "";
+
+    @include mobile-big{
+      left: 78px;
+      top: 20px;
+      width: 24px;
+      height: 4px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: -45px;
+    top: 40px;
+    color: #f2f2f2;
+    font-size: $title-big-font-size;
+    content: "you";
+    transform: rotate(90deg);
+    z-index: -1;
+
+    @include mobile-big{
+      font-size: 90px;
+    }
+  }
+
+}
+
+.start-section__title {
+  @extend %section-title;
+  font-size: 14px; //font size replacement for %section-title 320 px
+  padding: 0 53px 27px;
+
+  &--invert-color {
+    @include inverted-colors ($title-light-color, $title-dark-color);
+  }
+
+  @include mobile-big{
+    padding: 0 74px 42px;
+  }
+}
+
+// .troubles {
+// }
+
+.troubles__title {
+  font-weight: $black;
+  text-transform: uppercase;
+  font-size: $vertical_small-font-size;
+  
+  @include mobile-big{
+    font-size: 14px;
+  }
+}
+
+.troubles__list {
+  @include flex-list;
+}
+
+.troubles__items {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 10px;
+
+  @include mobile-big{
+    padding-left: 36px;
+    padding-top: 16px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    background-color: $title-dark-color;
+    content: "";
+
+    @include mobile-big{
+      left: 18px;
+      top: 20px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.troubles__items--bold {
+  font-weight: $bold;
+}
+
+.start-section__footer {
+  color: $mark-warm-color;
+  padding: 25px 55px 48px 55px;
+  text-align: center;
+
+  @include mobile-big{
+    padding: 41px 85px 48px 85px;
+    font-weight: bold;
+    // font-size: $title-small-font-size;
+  }
+}
