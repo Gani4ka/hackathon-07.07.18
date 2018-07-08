@@ -1,0 +1,195 @@
+$goitstudy-margin-left-mobile: 50px;
+
+.goitstudy{
+  padding: 30px 0;
+
+  &__wrapper {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    // @include mobile-big{
+    //   width: 446px;
+    // }
+
+    // @include tablet-small{
+    //   width: 640px;
+    // }
+
+    // @include tablet-big{
+    //   width: 800px;
+    // }
+
+    // @include desktop-small{
+    //   width: 714px;
+    // }
+
+    // @include desktop-big{
+    //   width: 856px;
+    // }
+  }
+
+  &__title{
+    @extend %section-title;
+    width: 254px;
+    margin: 0 auto 10px;
+  }
+
+  &__univ{
+    margin: 0 auto 22px;
+  }
+
+  &__awards{
+    margin-left: $goitstudy-margin-left-mobile;
+  }
+}
+
+//--------------------------------UNIVERSITY-----------------------------
+
+.univ{
+  &__title-cont{
+    width: 200px;
+    margin: 0 0 26px $goitstudy-margin-left-mobile;
+  }
+
+  &__title{
+    @extend %section-h3-title;
+    margin-bottom: 6px;
+  }
+
+  &__descr{
+    width: 190px; 
+  }
+
+  &__img{
+    width: 296px;
+    height: 106px;
+    background-image: url('../img/goitstudy-img-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto 40px;
+  }
+
+  &__online{
+    width: 200px;
+    margin-left: $goitstudy-margin-left-mobile;
+    padding-left: 18px;
+    position: relative;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      background-color: $title-dark-color;
+      position: absolute;
+      top: 19%;
+      left: 0px;
+    }
+  }
+}
+
+//--------------------------------AWARDS-----------------------------
+
+.awards{
+  &__un-card{
+    margin-bottom: 28px;
+  }
+
+  &__ukr-cont{
+
+  }
+
+  &__pretext{
+    display: inline-block;
+    font-size: 8.23px;
+    line-height: 10.8px;
+    color: $title-light-color;
+    background-color: $title-dark-color;
+  }
+
+
+  &__cards-cont{
+    counter-reset: c-text;
+  }
+
+  &__award-card{
+
+  }
+}
+
+.un-card{
+  width: 200px;
+  background-image: url('../img/goitstudy-img-02.png');
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: 30%;
+
+  &__pretext{
+    display: inline-block;
+    font-size: 8.23px;
+    line-height: 10.8px;
+    color: $title-light-color;
+    background-color: $title-dark-color;
+    margin-bottom: 20px;
+  }
+
+  &__title{
+    @extend %section-h3-title;
+    margin-bottom: 4px;
+    width: 125px;
+  }
+
+  &__text{
+
+  }
+}
+
+
+.award-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding-top: 14px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 95px;
+    top: 24px;
+    color: #f2f2f2;
+    font-size: 26px;
+    font-weight: $black;
+    counter-increment: c-text; 
+    content: "0"counter(c-text)"_";
+    transform: rotate(-90deg);
+    z-index: -1;
+  }
+
+  &__text-cont{
+    width: 80%;
+  }
+
+  &__title{
+    @extend %section-h3-title;
+    margin-bottom: 6px;
+  }
+
+  &__text{
+    &--bold{
+      font-weight: $bold;
+    }
+  }
+
+  &__img-cont{
+    width: 20%;
+  }
+
+  &__img{
+    @extend %img;
+  }
+
+
+}

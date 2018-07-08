@@ -1,0 +1,285 @@
+.bonus-section {
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    text-align: center;
+
+    @include mobile-big {
+      width: 480px;
+    }
+
+    @include tablet-small {
+      width: 768px;
+      display: flex;
+    }
+  }
+
+  &__title {
+    @extend %section-title;
+    @include inverted-colors($title-light-color, $title-dark-color);
+    display: inline-block;
+    margin-bottom: 12px;
+
+    @include mobile-big {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: $bold;
+    }
+  }
+
+  &__text {
+    @extend %section-text;
+    text-align: left;
+    margin-bottom: 35px;
+    padding: 0 70px 0 100px;
+    position: relative;
+    font-weight: $medium;
+
+    @include mobile-big {
+      font-size: 13.5px;
+      padding: 0 100px 0 160px;
+      margin-bottom: 55px;
+    }
+
+    @include tablet-small {
+      font-size: 9px;
+      line-height: 13.5px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 2px;
+      background-color: $title-dark-color;
+      left: 77px;
+      top: 8px;
+
+      @include mobile-big {
+        width: 19.5px;
+        left: 122px;
+        top: 10px;
+      }
+
+      @include tablet-small {
+        width: 28px;
+        height: 3.5px;
+      }
+    }
+  }
+}
+
+.bonus-list {
+  padding: 0 50px 20px 65px;
+  text-align: left;
+  list-style: none;
+
+  @include mobile-big {
+    padding: 0 80px 30px 100px;
+  }
+}
+
+.bonus-item {
+  position: relative;
+  counter-increment: count-box;
+  overflow: hidden;
+
+  &:not(:last-of-type) {
+    margin-bottom: 18px;
+
+    @include mobile-big {
+      margin-bottom: 30px;
+    }
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    content: "0" counter(count-box) ".";
+    font-size: 17px;
+    font-weight: $black;
+
+    @include mobile-big {
+      font-size: 25px;
+    }
+
+    @include tablet-small {
+      font-size: 17px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: $mark-cold-color;
+    left: 12px;
+    top: 25px;
+
+    @include mobile-big {
+      width: 10px;
+      height: 10px;
+      left: 22px;
+      top: 32px;
+    }
+
+    @include tablet-small {
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    padding-left: 30px;
+    text-transform: uppercase;
+
+    @include mobile-big {
+      padding-left: 55px;
+      line-height: 22px;
+    }
+
+    @include tablet-small {
+      line-height: 15px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 8px;
+
+    @include mobile-big {
+      padding-left: 55px;
+      font-size: 12px;
+      line-height: 17.5px;
+    }
+
+    @include tablet-small {
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+
+  &__cost {
+    @include inverted-colors($title-light-color, $title-dark-color);
+  }
+}
+
+.bonus-section__form {
+  margin: 0 auto;
+}
+
+.form {
+  width: 247px;
+  height: 231px;
+  padding: 30px 30px 60px 50px;
+  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.21);
+  text-align: left;
+
+  @include mobile-big {
+    width: 370px;
+    height: 346px;
+    padding: 55px 75px;
+  }
+
+  @include tablet-small {
+    width: 312px;
+    height: 293px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    outline: none;
+    font-size: 6px;
+    line-height: 8px;
+
+    @include mobile-big {
+      font-size: 9px;
+      line-height: 12px;
+    }
+
+    @include tablet-small {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $title-dark-color;
+    }
+
+    &::-moz-placeholder {
+      color: $title-dark-color;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+
+      @include mobile-big {
+        margin-bottom: 14px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+
+      @include mobile-big {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 5.3px;
+    line-height: 8px;
+    font-weight: $bold;
+    color: #d4d4d4;
+
+    @include mobile-big {
+      font-size: 8px;
+      line-height: 12px;
+    }
+
+    @include tablet-small {
+      font-size: 7px;
+      line-height: 10px;
+    }
+  }
+
+  &__button {
+    width: 116px;
+    height: 22px;
+    border: none;
+    outline: none;
+    background-color: $mark-warm-color;
+    color: $title-light-color;
+    text-transform: uppercase;
+    font-size: 5.3px;
+    font-weight: $black;
+    line-height: 8px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.21);
+
+    @include mobile-big {
+      width: 173px;
+      height: 33px;
+      font-size: 8px;
+      line-height: 12px;
+    }
+
+    @include tablet-small {
+      width: 146px;
+      height: 28px;
+      font-size: 7px;
+      line-height: 10px;
+    }
+  }
+}
