@@ -9,7 +9,7 @@
 
 .manypeople-section__title {
   @extend %section-title;
-  padding: 22px 100px 6px 50px;
+  padding: 0 100px 6px 50px;
   // text-transform: uppercase;
 
   @include mobile-big {
