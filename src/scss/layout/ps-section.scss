@@ -68,6 +68,13 @@
     background-color: $mark-warm-color;
     margin-bottom: 27px;
     border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  &__button:hover {
+    background-color: #df5a02;
   }
 
   &__name {

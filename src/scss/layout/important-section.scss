@@ -1,0 +1,148 @@
+.important-section {
+  &__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+
+    @include mobile-big {
+      max-width: 480px;
+    }
+
+    @include tablet-small {
+      max-width: 768px;
+    }
+
+    @include tablet-big {
+      max-width: 960px;
+    }
+
+    @include desktop-small {
+      max-width: 1200px;
+    }
+
+    @include desktop-big {
+      max-width: 1440px;
+    }
+  }
+
+  &__title {
+    @extend %section-title;
+    padding-bottom: 13px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    background-color: #fff;
+
+  }
+
+  &__text {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 12.89px;
+  }
+
+  &__text--blue {
+    border-top: 1px solid #052139;
+    background-color: #16ebfe;
+    color: black;
+    font-weight: 500;
+
+  }
+
+  &__text--big {
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 900;
+    line-height: 19.33px;
+    text-transform: uppercase;
+    font-size: 26px;
+    border: none;
+  }
+
+  &__text--price {
+    padding-right: 50px;
+    padding-bottom: 54px;
+  }
+
+  &__text--value {
+    padding-top: 54px;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  &__item {
+    max-width: 199px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  &__item--mark {
+    position: relative;
+  }
+
+  &__item--mark::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    transform: rotate(-55deg);
+    background-color: $title-dark-color;
+    position: absolute;
+    top: 20px;
+    left: -25px;
+  }
+  
+
+  &__item:first-child {
+    color: #000000;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.57px;
+  }
+
+  &__item:last-child {
+    color: #ff6b08;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14.37px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 7px;
+    font-weight: 900;
+    line-height: 10.06px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 11px 30px;
+    background-color: $mark-warm-color;
+    margin-bottom: 27px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.important__wrapper {
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
+  background-color: #052139;
+  color: white;
+  padding-bottom: 19px;
+  display: flex;
+  justify-content: center;
+  max-width: 249px;
+  margin: 0 auto;
+}
+
+.important-wrapper {
+  padding: 15px;
+}
+
+.important__wrapper-value {
+  display: flex;
+  justify-content: center;
+}
