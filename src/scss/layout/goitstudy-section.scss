@@ -40,7 +40,7 @@ $goitstudy-margin-left-mobile: 50px;
   }
 
   &__awards{
-    margin-left: $goitstudy-margin-left-mobile;
+    //margin-left: $goitstudy-margin-left-mobile;
   }
 }
 
@@ -94,11 +94,12 @@ $goitstudy-margin-left-mobile: 50px;
 
 .awards{
   &__un-card{
+    margin-left: $goitstudy-margin-left-mobile;
     margin-bottom: 28px;
   }
 
   &__ukr-cont{
-
+    margin-left: $goitstudy-margin-left-mobile;
   }
 
   &__pretext{
@@ -110,11 +111,11 @@ $goitstudy-margin-left-mobile: 50px;
   }
 
 
-  &__cards-cont{
+  &__cards-list{
     counter-reset: c-text;
   }
 
-  &__award-card{
+  &__cards-item{
 
   }
 }
