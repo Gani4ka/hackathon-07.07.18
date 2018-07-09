@@ -4,7 +4,6 @@
     margin: 0 auto;
     position: relative;
     padding-bottom: 40px;
-    // outline: 1px solid red;
 
     @include mobile-big {
       max-width: 480px;
@@ -117,7 +116,6 @@
     @include tablet-big {
       max-width: 400px;
     }
-
   }
 
   &__img {
@@ -144,8 +142,6 @@
       height: 121px;
     }
     @include desktop-big {
-      // top: 228px;
-      // left: 930px;
       top: 120px;
       left: 910px;
       width: 347px;
@@ -154,7 +150,6 @@
   }
 
   &__title-wrapper {
-    // padding-left: 60px;
     @include tablet-big {
       padding-left: 80px;
     }

@@ -13,7 +13,7 @@
   // text-transform: uppercase;
 
   @include mobile-big {
-    padding: 0 74px 42px;
+    // padding: 0 74px 42px;
   }
 }
 
@@ -50,15 +50,17 @@
   background-repeat: no-repeat;
   
   @include mobile-big{
-    height: 130px;
+    // height: 130px;
   }
 }
 
 .career-section__img1 {
   background-image: url('../img/career-img-01.png');
-  background-position: top 10% right 50%;
-  background-size: 64%;
-  height: 145px;
+  // background-position: top 10% right 50%;
+  background-position: center;
+  background-size: contain;
+  width: 193px;
+  height: 154px;
 }
 
 .career-section__img2 {

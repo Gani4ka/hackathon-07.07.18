@@ -34,12 +34,11 @@
 
   &__discr {
     max-width: 194px;
-    // text-align: left;
     margin: 0 auto;
     padding-left: 30px;
     position: relative;
     padding-bottom: 16px;
-    font-weight: 500;
+    font-weight: $medium;
   }
 
   &__discr::before {
@@ -47,15 +46,15 @@
     display: block;
     width: 12px;
     height: 2px;
-    background-color: #000000;
+    background-color: $title-dark-color;
     position: absolute;
     top: 5px;
     left: 10px;
   }
 
-  &__discr span {
-    border-top: 1px solid #fff;
-    background-color: #16ebfe;;
+  &__discr--mark {
+    border-top: 1px solid $title-light-color;
+    background-color: $mark-cold-color;
   }
 
   &__img {
@@ -103,9 +102,5 @@
     max-width: 152px;
     text-align: left;
     margin: 0 auto;
-  }
-
-  &__text:last-child {
-    // padding-bottom: 0px;
   }
 }
