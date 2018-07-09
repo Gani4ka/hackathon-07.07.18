@@ -2,8 +2,9 @@
   .steps-section {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 267px;
     margin: 0px auto 20px auto;
+    overflow: hidden;
   }
 
   .steps-section__discription {

@@ -12,3 +12,10 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
+
+.main-button:hover {
+  background-color: $mark-cold-color;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+
+}
