@@ -4048,6 +4048,12 @@ button {
   letter-spacing: 0.12em;
 }
 
+.main-button:hover {
+  background-color: #16ebfe;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+}
+
 .social-link__icon {
   width: 100%;
   height: 100%;
@@ -4092,7 +4098,7 @@ button {
   position: absolute;
   width: 31px;
   height: 41px;
-  background-image: url("../img/header-aux-img-01.png");
+  background-image: url("../img/header-number.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: -68px;
@@ -4603,9 +4609,10 @@ button {
 
 .career-section__img1 {
   background-image: url("../img/career-img-01.png");
-  background-position: top 10% right 50%;
-  background-size: 64%;
-  height: 145px;
+  background-position: center;
+  background-size: contain;
+  width: 193px;
+  height: 154px;
 }
 
 .career-section__img2 {
@@ -4704,8 +4711,12 @@ button {
 
 .videocourse__footer {
   color: #ff6b08;
-  padding: 25px 55px 30px 45px;
+  padding: 25px 0 30px 0;
   position: relative;
+  font-weight: 700;
+  max-width: 215px;
+  margin: 0 auto;
+  outline: 1 px solid red;
 }
 
 .videocourse__footer::before {
@@ -4717,8 +4728,8 @@ button {
   transform: rotate(-55deg);
   background-color: #000000;
   position: absolute;
-  top: 40%;
-  left: 23px;
+  top: 37px;
+  left: -23px;
 }
 
 .video-advantages__button {
@@ -4754,10 +4765,6 @@ button {
 
 .goitstudy__univ {
   margin: 0 auto 22px;
-}
-
-.goitstudy__awards {
-  margin-left: 50px;
 }
 
 .univ__title-cont {
@@ -4802,7 +4809,12 @@ button {
 }
 
 .awards__un-card {
+  margin-left: 50px;
   margin-bottom: 28px;
+}
+
+.awards__ukr-cont {
+  margin-left: 50px;
 }
 
 .awards__pretext {
@@ -4813,7 +4825,7 @@ button {
   background-color: #000000;
 }
 
-.awards__cards-cont {
+.awards__cards-list {
   counter-reset: c-text;
 }
 
@@ -4912,8 +4924,8 @@ button {
   left: 10px;
 }
 
-.courserecord-section__discr span {
-  border-top: 1px solid #fff;
+.courserecord-section__discr--mark {
+  border-top: 1px solid #ffffff;
   background-color: #16ebfe;
 }
 
@@ -5480,7 +5492,7 @@ button {
 }
 
 .important-section__wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .important-section__text {
@@ -5557,19 +5569,12 @@ button {
 .important-section__button {
   display: block;
   margin: 0 auto;
-  color: #ffffff;
   text-align: center;
   font-size: 7px;
   font-weight: 900;
   line-height: 10.06px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
   padding: 11px 30px;
-  background-color: #ff6b08;
   margin-bottom: 27px;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 .important__wrapper {
@@ -5625,25 +5630,14 @@ button {
 }
 
 .ps-section__button {
-  display: block;
   margin: 0 auto;
   color: #ffffff;
   text-align: center;
   font-size: 7px;
   font-weight: 900;
   line-height: 10.06px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
   padding: 12px 28px;
-  background-color: #ff6b08;
   margin-bottom: 27px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.ps-section__button:hover {
-  background-color: #df5a02;
 }
 
 .ps-section__name {
@@ -5660,8 +5654,9 @@ button {
   max-width: 250px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .ps-section__item {
@@ -5672,7 +5667,7 @@ button {
   padding-bottom: 7px;
 }
 
-.ps-section__item span {
+.ps-section__item--bold {
   font-weight: 700;
 }
 
@@ -5962,8 +5957,9 @@ button {
   .steps-section {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 267px;
     margin: 0px auto 20px auto;
+    overflow: hidden;
   }
 
   .steps-section__discription {
@@ -6063,8 +6059,9 @@ button {
   .aftercourse-section {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 267px;
     margin: 20px auto;
+    overflow: hidden;
   }
 
   .aftercourse-section__discription {
@@ -6371,10 +6368,6 @@ button {
     max-width: 445px;
   }
 
-  .career-section__title {
-    padding: 0 74px 42px;
-  }
-
   .career-section__subtitle {
     padding: 12px 0 10px 118px;
   }
@@ -6384,10 +6377,6 @@ button {
     top: 20px;
     width: 24px;
     height: 4px;
-  }
-
-  .career-section__img {
-    height: 130px;
   }
 
   .videocourse {
@@ -6400,11 +6389,6 @@ button {
 
   .videocourse__img {
     height: 130px;
-  }
-
-  .videocourse__footer {
-    padding: 41px 85px 48px 85px;
-    font-weight: bold;
   }
 
   .courserecord-section__wrapper {
