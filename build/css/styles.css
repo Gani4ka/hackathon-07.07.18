@@ -4349,7 +4349,7 @@ button {
 
 .facts-section__discr {
   position: relative;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 165px;
   margin: 0 auto;
 }
@@ -4402,16 +4402,16 @@ button {
   background-color: #ff6b08;
 }
 
-.facts-section-fact__text--select {
+.facts-section-fact__text-select {
   display: inline-block;
 }
 
-.facts-section-fact__text--select span {
-  border-top: 1px solid #fff;
+.facts-section-fact__text-select--mark {
+  border-top: 1px solid #ffffff;
   background-color: #16ebfe;
 }
 
-.facts-section-fact__text--common {
+.facts-section-fact__text-common {
   max-width: 231px;
   padding-top: 10px;
 }
@@ -6317,7 +6317,7 @@ button {
     height: 9px;
   }
 
-  .facts-section-fact__text--common {
+  .facts-section-fact__text-common {
     max-width: 344px;
   }
 
@@ -6491,7 +6491,7 @@ button {
 }
 
 @media (min-width: 480px) and (min-width: 768px) {
-  .facts-section-fact__text--common {
+  .facts-section-fact__text-common {
     max-width: 124px;
     font-size: 8px;
     line-height: 11.78px;
@@ -6499,13 +6499,13 @@ button {
 }
 
 @media (min-width: 480px) and (min-width: 960px) {
-  .facts-section-fact__text--common {
+  .facts-section-fact__text-common {
     max-width: 169px;
   }
 }
 
 @media (min-width: 480px) and (min-width: 1200px) {
-  .facts-section-fact__text--common {
+  .facts-section-fact__text-common {
     font-size: 9px;
     line-height: 13.13px;
   }
@@ -6659,8 +6659,6 @@ button {
     left: 440px;
     display: block;
     z-index: -1;
-    width: 259px;
-    height: 109px;
   }
 
   .facts-section-fact {
@@ -6692,11 +6690,11 @@ button {
     order: 2;
   }
 
-  .facts-section-fact__text--select {
+  .facts-section-fact__text-select {
     max-width: 136px;
   }
 
-  .facts-section-fact__text--select {
+  .facts-section-fact__text-select {
     max-width: 136px;
     font-size: 8px;
     line-height: 13.46px;
@@ -7057,12 +7055,12 @@ button {
     line-height: 22.5px;
   }
 
-  .facts-section-fact__text--select {
+  .facts-section-fact__text-select {
     font-size: 9px;
     line-height: 15px;
   }
 
-  .facts-section-fact__text--select {
+  .facts-section-fact__text-select {
     max-width: 150px;
   }
 
