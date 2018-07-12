@@ -49,6 +49,8 @@
     letter-spacing: 0.18px;
     color: #65666a;
     text-decoration: none;
+    transition: all 0.2s linear;
+
 
     @include mobile-big {
       font-size: 5px;
@@ -85,10 +87,17 @@
     @include tablet-big {
       margin-right: 10px;
     }
+
+    &:hover {
+      color: #ff0000;
+      transition: all 0.2s linear;
+    }
   }
 
   &__icon {
     width: 10px;
+    transition: all 0.2s linear;
+
 
     @include mobile-big {
       width: 14px;
@@ -104,6 +113,11 @@
 
     @include desktop-small {
       width: 19px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.2s linear;
     }
   }
 }
