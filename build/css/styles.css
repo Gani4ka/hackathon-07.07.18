@@ -4049,12 +4049,14 @@ button {
   outline: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
+  transition: background-color 200ms linear;
 }
 
 .main-button:hover {
   background-color: #16ebfe;
   cursor: pointer;
   box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+  transition: background-color 200ms linear;
 }
 
 .social-link__icon {
@@ -5710,6 +5712,12 @@ button {
   color: #ffffff;
   font-weight: 900;
   line-height: 7px;
+  transition: color 200ms linear;
+}
+
+.upperfooter__social:hover {
+  color: #ff6b08;
+  transition: color 200ms linear;
 }
 
 .upperfooter__button {
@@ -5722,10 +5730,13 @@ button {
   border: 0.417px solid #1b4371;
   outline: none;
   cursor: pointer;
+  transition: color 200ms linear;
 }
 
-.upperfooter__button:hover {
+.upperfooter__button:hover,
+.upperfooter__button:focus {
   color: #ff6b08;
+  transition: color 200ms linear;
 }
 
 .upperfooter__container {
@@ -5745,6 +5756,15 @@ button {
 .contact__address {
   display: block;
   color: #a2a2a2;
+  transition: color 200ms linear;
+}
+
+.contact__email:hover,
+.contact__email:focus,
+.contact__tel:hover,
+.contact__tel:focus {
+  color: #ffffff;
+  transition: color 200ms linear;
 }
 
 .bottomfooter {
@@ -5770,14 +5790,27 @@ button {
   letter-spacing: 0.18px;
   color: #65666a;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 .bottomfooter__link:not(:last-of-type) {
   margin-right: 4px;
 }
 
+.bottomfooter__link:hover {
+  color: #ff0000;
+  transition: all 0.2s linear;
+}
+
 .bottomfooter__icon {
   width: 10px;
+  transition: all 0.2s linear;
+}
+
+.bottomfooter__icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.2s linear;
 }
 
 @media (min-width: 320px) {
