@@ -96,6 +96,7 @@
     color: $title-light-color;
     font-weight: $black;
     line-height: 7px;
+    transition: color 200ms linear;
 
     @include mobile-big {
       line-height: 10px;
@@ -116,6 +117,11 @@
     @include desktop-big {
       line-height: 19.5px;
     }
+
+    &:hover {
+      color: $mark-warm-color;
+      transition: color 200ms linear;
+    }
   }
 
   // BUTTON
@@ -130,6 +136,7 @@
     border: 0.417px solid #1b4371;
     outline: none;
     cursor: pointer;
+    transition: color 200ms linear;
 
     @include mobile-big {
       width: 86px;
@@ -160,8 +167,9 @@
       border-width: 1.5px;
     }
 
-    &:hover {
+    &:hover, &:focus {
       color: $mark-warm-color;
+      transition: color 200ms linear;
     }
   }
 }
@@ -194,5 +202,12 @@
     display: block;
     @extend %link;
     color: #a2a2a2;
+    transition: color 200ms linear;
+  }
+
+  &__email:hover,&__email:focus,
+  &__tel:hover, &__tel:focus {
+    color: $title-light-color;
+    transition: color 200ms linear;
   }
 }
