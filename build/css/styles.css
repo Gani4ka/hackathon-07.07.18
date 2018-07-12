@@ -5612,6 +5612,23 @@ button {
   text-align: center;
   margin: 0 auto;
   max-width: 125px;
+  position: relative;
+}
+
+.ps-section__title::after {
+  display: block;
+  content: "GO";
+  font-size: 67.82px;
+  color: #f7f7f7;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.8;
+  position: absolute;
+  left: -100px;
+  top: 20px;
+  z-index: -1;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .ps-section__discr {
