@@ -1,17 +1,48 @@
 .bottomfooter {
+  background-color: $bottomfooter-color;
+
   &__wrapper {
     min-width: 320px;
+    max-width: 380px;
     width: 100%;
     min-height: 16px;
+    margin: 0 auto;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $bottomfooter-color;
+
+    @include mobile-big {
+      min-width: 480px;
+      min-height: 22px;
+      padding: 0 15px;
+    }
+
+    @include tablet-small {
+      min-width: 768px;
+      min-height: 34px;
+      padding: 0 63px;
+    }
+
+    @include tablet-big {
+      min-width: 960px;
+      min-height: 43px;
+      padding: 0 80px;
+    }
+
+    @include desktop-small {
+      min-width: 732px;
+      min-height: 38px;
+      padding: 0 10px;
+    }
+
+    @include desktop-big {
+      min-width: 878px;
+      padding: 0 12px;
+    }
   }
 
   &__link {
-    // padding-bottom: 6px;
     font-family: $bottomfooter-font;
     font-size: 3px;
     line-height: 16px;
@@ -19,9 +50,60 @@
     color: #65666a;
     text-decoration: none;
 
+    @include mobile-big {
+      font-size: 5px;
+      line-height: 16px;
+    }
+
+    @include tablet-small {
+      font-size: 7px;
+      line-height: 23px;
+    }
+
+    @include tablet-big {
+      font-size: 8.5px;
+      line-height: 29px;
+    }
+
+    @include desktop-small {
+      font-size: 7.5px;
+      line-height: 25.5px;
+    }
+
     &:not(:last-of-type) {
       margin-right: 4px;
     }
+
+    @include mobile-big {
+      margin-right: 6px;
+    }
+
+    @include tablet-small {
+      margin-right: 8px;
+    }
+
+    @include tablet-big {
+      margin-right: 10px;
+    }
   }
 
+  &__icon {
+    width: 10px;
+
+    @include mobile-big {
+      width: 14px;
+    }
+
+    @include tablet-small {
+      width: 18px;
+    }
+
+    @include tablet-big {
+      width: 22px;
+    }
+
+    @include desktop-small {
+      width: 19px;
+    }
+  }
 }
