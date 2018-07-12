@@ -73,17 +73,17 @@
       height: 18px;
     }
 
-    @include tablet-big  {
+    @include tablet-big {
       width: 71px;
       height: 22px;
     }
 
-    @include desktop-small  {
+    @include desktop-small {
       width: 63px;
       height: 19px;
     }
 
-    @include desktop-small  {
+    @include desktop-small {
       width: 75px;
       height: 23px;
     }
@@ -127,25 +127,28 @@
     color: $title-light-color;
     text-transform: uppercase;
     background-color: transparent;
-    border: 1px solid $importantbg-color;
+    border: 0.417px solid #1b4371;
     outline: none;
     cursor: pointer;
 
     @include mobile-big {
       width: 86px;
       height: 20px;
+      border-width: 0.625px;
     }
 
     @include tablet-small {
       width: 125px;
       height: 30px;
+      border-width: 1px;
     }
 
     @include tablet-big {
       width: 155px;
       height: 35px;
+      border-width: 1.25px;
     }
-    
+
     @include desktop-small {
       width: 138px;
       height: 32px;
@@ -154,10 +157,14 @@
     @include desktop-big {
       width: 164px;
       height: 34px;
+      border-width: 1.5px;
+    }
+
+    &:hover {
+      color: $mark-warm-color;
     }
   }
 }
-
 
 .upperfooter__container {
   display: inline-flex;
@@ -167,16 +174,25 @@
 }
 
 // CONTACT'S TITLE
+.contact {
+  &__title {
+    margin-bottom: 5px;
+    font-weight: $black;
 
-.contact__title {
-  margin-bottom: 5px;
-  font-weight: $black;
+    @include tablet-small {
+      margin-bottom: 10px;
+    }
 
-  @include tablet-small {
-    margin-bottom: 10px;
+    @include desktop-big {
+      margin-bottom: 14px;
+    }
   }
 
-  @include desktop-big {
-    margin-bottom: 14px;
+  &__email,
+  &__tel,
+  &__address {
+    display: block;
+    @extend %link;
+    color: #a2a2a2;
   }
 }
