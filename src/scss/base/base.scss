@@ -14,30 +14,30 @@ body {
   font-weight: $regular;
   line-height: 13px;
 
-  // @include mobile-big{
-  //   font-size: 13.5px;
-  //   line-height: 19.5px;
-  // }
+  @include mobile-big{
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
 
-  // @include tablet-small{
-  //   font-size: 9px;
-  //   line-height: 13.5px;
-  // }
+  @include tablet-small{
+    font-size: 9px;
+    line-height: 13.5px;
+  }
 
-  // @include tablet-big{
-  //   font-size: 9.8px;
-  //   line-height: 16.8px;
-  // }
+  @include tablet-big{
+    font-size: 9.8px;
+    line-height: 16.8px;
+  }
 
-  // @include desktop-small{
-  //   font-size: 8.75px;
-  //   line-height: 15px;
-  // }
+  @include desktop-small{
+    font-size: 8.75px;
+    line-height: 15px;
+  }
 
-  // @include desktop-big{
-  //   font-size: 10.5px;
-  //   line-height: 18px;
-  // }
+  @include desktop-big{
+    font-size: 10.5px;
+    line-height: 18px;
+  }
 
 }
 
