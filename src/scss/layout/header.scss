@@ -1,64 +1,120 @@
 .header{
-  padding: 10px 0 25px;
+  //padding: 10px 0 25px;
+  padding-top: 10px;
+  // min-height: 406px;
   background-image: url('../img/header-img-bg-small.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 1;
   
   @include mobile-big{
-    padding: 15px 0 39px;
+    // padding: 15px 0 39px;
+    padding-top: 15px;
+    // min-height: 612px;
   }
 
   @include tablet-small{
-    padding: 20px 0 98px;
+    // padding: 20px 0 98px;
+    padding-top: 20px;
+    // min-height: 475px;
     background-image: url('../img/header-img-bg-big.jpg');
   }
 
   @include tablet-big{
-    padding: 25px 0 120px;
+    // padding: 25px 0 120px;
+    padding-top: 25px;
     // min-height: 595px;
   }
 
   @include desktop-small{
-    padding: 25px 0 107px;
+    // padding: 25px 0 107px;
+    padding-top: 25px;
     //background-image: url('');
+    // min-height: 531px;
   }
 
   @include desktop-big{
-    padding: 27px 0 127px;
+    //padding: 27px 0 127px;
+    padding-top: 27px;
+    // min-height: 637px;
   }
 
-  
+  &::after{
+    content: 'GOIT';
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: "Acrom";
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: $black;
+    text-transform: uppercase;
+    line-height: 0.585;
+    text-align: center;
+
+    @include mobile-big{
+      font-size: 115px;
+      top: 48%;
+    }
+
+    @include tablet-small{
+      font-size: 235px;
+      top: 50%;
+    }
+
+    @include tablet-big{
+      font-size: 294px;
+    }
+
+    @include desktop-small{
+      font-size: 262px;
+    }
+
+    @include desktop-big{
+      font-size: 315px;
+    }
+ 
+  }
 
   &__nav{
     width: 300px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 13px;
+    margin: 0 auto; //13px;
+
 
     @include mobile-big{
       width: 446px;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
+
     }
 
     @include tablet-small{
       width: 640px;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
+
     }
 
     @include tablet-big{
       width: 800px;
-      margin-bottom: 57px;
+      // margin-bottom: 57px;
+
     }
 
     @include desktop-small{
       width: 1130px;
-      margin-bottom: 46px;
+      // margin-bottom: 46px;
+
     }
 
     @include desktop-big{
       width: 1348px;
-      margin-bottom: 66px;
+      // margin-bottom: 66px;
+
     }
   }
 
@@ -121,25 +177,38 @@
     width: 300px;
     margin: 0 auto;
     position: relative;
+    z-index: 5;
+    padding: 13px 0 25px;//!!!!!!!
+    //В данном случае wrapper отталкивается от nav верхним паддингом (а не nav от wrapper нижним margin), 
+    //чтобы во wrapper уместить бг-картинку с двумя товарищами)
 
     @include mobile-big{
       width: 446px;
+      padding: 20px 0 39px;//!!!!!!!
     }
 
     @include tablet-small{
       width: 640px;
+      background-image: url('../img/header-img-bg-people.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+      padding: 40px 0 98px;//!!!!!!!!
     }
 
     @include tablet-big{
       width: 800px;
+      padding: 57px 0 120px;//!!!!!!!!!!
     }
 
     @include desktop-small{
       width: 714px;
+      padding: 46px 0 107px;//!!!!!!!!!!!!!!
     }
 
     @include desktop-big{
       width: 856px;
+      padding: 66px 0 127px;//!!!!!!!!!!!
     }
 
     &::before{
@@ -152,8 +221,8 @@
       background-image: url('../img/header-number.png');
       background-repeat: no-repeat;
       background-size: contain;
-      bottom: -68px;
-      left: 0;
+      bottom: 32px;
+      left: -4px;
       z-index: 2;
   
   
@@ -164,22 +233,22 @@
       @include tablet-big{
         width: 38px;
         height: 54px;
-        bottom: -86px;
-        left: 0;
+        // bottom: 26px;
+        //left: 0;
       }
 
       @include desktop-small{
         width: 34px;
         height: 50px;
-        bottom: -80px;
-        left: -210px;
+        bottom: 26px;
+        left: -207px;
       }
 
       @include desktop-big{
         width: 37px;
         height: 54px;
-        bottom: -90px;
-        left: -246px;
+        bottom: 37px;
+        left: -244px;
       }
     }
   }
@@ -190,7 +259,7 @@
     align-items: flex-start;
     //flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     @include mobile-big{
       margin-bottom: 38px;
@@ -213,9 +282,15 @@
 
   &__title-container{
     width: 100%;
+    margin-bottom: 104px;
+
+    @include mobile-big{
+      margin-bottom: 156px;
+    }
 
     @include tablet-small{
       width: 367px;
+      margin-bottom: 0px;
     }
 
     @include tablet-big{
@@ -242,7 +317,7 @@
     text-transform: uppercase;
 
     @include mobile-big{
-      width: 250px;
+      width: 255px;
       font-size: 30px;
       line-height: 39px;
       margin-bottom: 33px;
@@ -252,7 +327,7 @@
       width: 100%;
       font-size: 44.8px;
       line-height: 56px;
-      margin-bottom: 23px;
+      margin-bottom: 28px;
     }
 
     @include tablet-big{
@@ -346,7 +421,7 @@
 
   &__announce{
     width: 250px;
-    margin: 0 auto 104px;
+    margin: 0 auto;
     @extend %section-text;
     font-weight: $bold;
     color: $title-light-color;
@@ -357,17 +432,18 @@
 
     @include mobile-big{
       width: 382px;
-      //font-size: 30px;
-      //line-height: 39px;
-      margin-bottom: 156px;
+      font-size: 13.5px;
+      line-height: 19.5px;
+
     }
 
     @include tablet-small{
       width: 172px;
       text-align: left;
-      margin: 0 0 0 55px;
+
       font-size: 7.85px;
       line-height: 13.46px;
+      margin-left: 55px;
     }
 
     @include tablet-big{
@@ -397,6 +473,10 @@
       color: $mark-cold-color;
       display: block;
       position: absolute;
+
+      @include mobile-big{
+        font-size: 22.5px;
+      }
 
       @include tablet-small{
         font-size: 13.4px;
@@ -447,7 +527,7 @@
     }
 
     @include tablet-small{
-      padding-top: 6px;
+      padding-top: 11px;
       width: 147px;
     }
 
@@ -471,10 +551,13 @@
     @extend %section-text;
     color: $title-light-color;
     text-transform: uppercase;
+    font-weight: $bold;
     margin: 0 0 4px 28px;
 
     @include mobile-big{
       margin: 0 0 5px 38px;
+      //font-size: 13.5px;
+      //line-height: 19.5px;
     }
 
     @include tablet-small{
@@ -482,7 +565,7 @@
       margin: 0 0 10px 0;
       font-size: 10.1px;
       line-height: 16.8px;
-      font-weight: $bold;
+   
     }
 
     @include tablet-big{
@@ -511,6 +594,8 @@
 
     @include mobile-big{
       margin: 0 0 0 38px;
+      font-size: 13.5px;
+      line-height: 19.5px;
     }
 
     @include tablet-small{
@@ -587,21 +672,21 @@
     @include tablet-small{
       display: flex;
       justify-content: space-between;
-      bottom: 55px;
+      bottom: 150px;
       right: 0;
     }
     @include tablet-big{
-      bottom: 70px;
+      bottom: 188px;
     }
 
     @include desktop-small{
-      bottom: -71px;
-      right: -200px;
+      bottom: 32px;
+      right: -205px;
     }
 
     @include desktop-big{
-      bottom: -86px;
-      right: -245px;
+      bottom: 42px;
+      right: -249px;
     }
     
   }
